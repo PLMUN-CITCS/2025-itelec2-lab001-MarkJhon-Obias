@@ -71,7 +71,7 @@ jobs:
           test-name: Hello.py Output Check
           command: |
             python3 hello.py > hello.py
-            if grep -q "Hello world!" output.txt && grep -qF "$(cat hello.py)" hello.py; then
+            if grep -q "Hello world!" hello.py && grep -qF "$(cat hello.py)" hello.py; then
                 echo "Output Passed"
             else
                 exit 1
