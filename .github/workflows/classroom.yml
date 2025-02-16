@@ -34,7 +34,7 @@ jobs:
         uses: classroom-resources/autograding-command-grader@v1
         with:
           test-name: File Existence Check - intro.txt
-          command: "test -f hello.py"
+          command: "test -f intro.txt"
           timeout: 10
           max-score: 10
 
@@ -70,8 +70,8 @@ jobs:
         with:
           test-name: Hello.py Output Check
           command: |
-            python3 hello.py > hello.py
-            if grep -q "Hello world!" hello.py && grep -qF "$(cat hello.py)" hello.py; then
+            python3 hello.py > output.txt
+            if grep -q "Hello world!" hello.py && grep -qF "$(cat output.txt)" output.txt; then
                 echo "Output Passed"
             else
                 exit 1
