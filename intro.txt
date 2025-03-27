@@ -1,3 +1,3 @@
-Name: Markjhon Obias
-Course: BSIT
-Interests in programming: Coding
+Name: [Your Full Name]
+Course: [Your Course Name]
+Interests in programming: [Your Interests]
